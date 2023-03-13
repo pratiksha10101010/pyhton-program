@@ -1,0 +1,29 @@
+def prime_fac(num):
+    list1=[]
+    i=2
+    while i<=num:
+        if num%i==0:
+            list1.append(i)
+            num=num/i
+        else:
+            i+=1
+    return list1
+num=int(input('enter number'))
+list1=prime_fac(num)
+print('prime factor are',list1)
+if len(list1)>0:
+    print('largest factor is',max(list1))
+else:
+    print(no factor)
+    
+    
+    
+    
+    
+    
+    *************output******************
+    enter number 10
+prime factor are [2, 5]
+largest factor is 5
+
+    
